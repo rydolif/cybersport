@@ -2530,6 +2530,10 @@ $(function() {
       }
   });
 
+  if($(this).scrollTop()>20){
+      $('.header').addClass('header--active');
+  }
+      
   $(".header__list").on("click","a", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
